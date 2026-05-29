@@ -186,7 +186,7 @@ $#aa5336: rgba(170,83,54,1);
                                 <h1>SMKS Techno Media</h1>
                                 <p class="opacity-75">Lulusan Hebat: Bekerja, Berwirausaha, Melanjutkan</p>
                                 <p>
-                                    <a class="btn btn-lg daftar" href="https://docs.google.com/forms/d/e/1FAIpQLSfWFKwg-9jMG6rnKLgHBw7iK_MREqnLXJXmN2T9-haZYSSVCg/viewform?usp=publish-editor">Pendaftaran</a>
+                                    <a class="btn btn-lg daftar" href="#FormDaftar">Pendaftaran</a>
                                 </p>
                             </div>
                     </div>
@@ -198,7 +198,7 @@ $#aa5336: rgba(170,83,54,1);
                                 <h1>SMKS Techno Media</h1>
                                 <p class="opacity-75">Lulusan Hebat: Bekerja, Berwirausaha, Melanjutkan</p>
                                 <p>
-                                    <a class="btn btn-lg daftar" href="#">Pendaftaran</a>
+                                    <a class="btn btn-lg daftar" href="#FormDaftar">Pendaftaran</a>
                                 </p>
                             </div>
                     </div>
@@ -210,7 +210,7 @@ $#aa5336: rgba(170,83,54,1);
                                 <h1>SMKS Techno Media</h1>
                                 <p class="opacity-75">Lulusan Hebat: Bekerja, Berwirausaha, Melanjutkan</p>
                                 <p>
-                                    <a class="btn btn-lg daftar" href="#">Pendaftaran</a>
+                                    <a class="btn btn-lg daftar" href="#FormDaftar">Pendaftaran</a>
                                 </p>
                             </div>
                     </div>
@@ -394,7 +394,7 @@ $#aa5336: rgba(170,83,54,1);
 
 <!-- Formulir Pendaftaran -->
 <div class="container mt-5 pt-5 mb-5 pb-5">
-    <div class="row justify-content-center">
+    <div class="row justify-content-center" id="FormDaftar">
          <div class="col-12 col-lg-10">
             <div class="card mt-5 text-center mx-auto w-100 text-white" 
                 style="background-color:#5229CB;">
@@ -407,7 +407,7 @@ $#aa5336: rgba(170,83,54,1);
                                 <form>
                                     <div class="mb-3">
                                         <label for="" class="form-label">Nama Lengkap</label>
-                                        <input type="" class="form-control bg-dark text-white border-1" id="nama" aria-describedby="emailHelp">
+                                        <input type="text" class="form-control bg-dark text-white border-1" id="nama" aria-describedby="emailHelp">
                                     </div>
                                 </form>
                             </div>
@@ -420,8 +420,8 @@ $#aa5336: rgba(170,83,54,1);
 
                                         <select id="gender" class="form-select bg-dark text-white border-1" aria-label="Default select example">
                                             <option selected>Jenis Kelamin</option>
-                                            <option value="1">Laki Laki</option>
-                                            <option value="2">Perempuan</option>
+                                            <option value="Laki-Laki">Laki Laki</option>
+                                            <option value="Perempuan">Perempuan</option>
                                         </select>
                                     </div>
                                 </form>
@@ -432,7 +432,7 @@ $#aa5336: rgba(170,83,54,1);
                                 <form>
                                     <div class="mb-3">
                                         <label for="" class="form-label">NISN SMP</label>
-                                        <input type="" id="nisn" class="form-control bg-dark text-white border-1" aria-describedby="emailHelp">
+                                        <input type="text" inputmode="numeric" id="nisn" class="form-control bg-dark text-white border-1" aria-describedby="emailHelp">
                                     </div>
                                 </form>
                             </div>
@@ -440,7 +440,7 @@ $#aa5336: rgba(170,83,54,1);
                                 <form>
                                     <div class="mb-3">
                                         <label for="" class="form-label">NIK</label>
-                                        <input type="" id="nik" class="form-control bg-dark text-white border-1" aria-describedby="emailHelp">
+                                        <input type="text" inputmode="numeric" id="nik" class="form-control bg-dark text-white border-1" aria-describedby="emailHelp">
                                     </div>
                                 </form>
                             </div>
@@ -450,7 +450,7 @@ $#aa5336: rgba(170,83,54,1);
                                 <form>
                                     <div class="mb-3">
                                         <label for="" class="form-label">Tempat Lahir</label>
-                                        <input type="" id="tempatlahir" class="form-control bg-dark text-white border-1" aria-describedby="emailHelp">
+                                        <input type="text" id="tempatlahir" class="form-control bg-dark text-white border-1" aria-describedby="emailHelp">
                                     </div>
                                 </form>
                             </div>
@@ -458,7 +458,7 @@ $#aa5336: rgba(170,83,54,1);
                                 <form>
                                     <div class="mb-3">
                                         <label for="" class="form-label">Tanggal Lahir</label>
-                                        <input type="" id="tanggallahir" class="form-control bg-dark text-white border-1" aria-describedby="emailHelp">
+                                        <input type="date" id="tanggallahir" class="form-control bg-dark text-white border-1" aria-describedby="emailHelp">
                                     </div>
                                 </form>
                             </div>
@@ -468,7 +468,7 @@ $#aa5336: rgba(170,83,54,1);
                                 <form>
                                     <div class="mb-3">
                                         <label for="" class="form-label">Agama</label>
-                                        <input type="" id="agama" class="form-control bg-dark text-white border-1" aria-describedby="emailHelp">
+                                        <input type="text" id="agama" class="form-control bg-dark text-white border-1" aria-describedby="emailHelp">
                                     </div>
                                 </form>
                             </div>
@@ -476,7 +476,7 @@ $#aa5336: rgba(170,83,54,1);
                                 <form>
                                     <div class="mb-3">
                                         <label for="" class="form-label">Nomor Whatsapp Siswa</label>
-                                        <input type="" id="whatsappsiswa" class="form-control bg-dark text-white border-1" aria-describedby="emailHelp">
+                                        <input type="text" inputmode="numeric" id="whatsappsiswa"  required pattern="[0-9]+" class="form-control bg-dark text-white border-1" aria-describedby="emailHelp">
                                     </div>
                                 </form>
                             </div>
@@ -492,7 +492,7 @@ $#aa5336: rgba(170,83,54,1);
                                 <form>
                                     <div class="mb-3">
                                         <label for="" class="form-label">Nama Orang Tua/Wali</label>
-                                        <input type="" class="form-control bg-dark text-white border-1" id="orangtua" aria-describedby="emailHelp">
+                                        <input type="text" class="form-control bg-dark text-white border-1" id="orangtua" aria-describedby="emailHelp">
                                     </div>
                                 </form>
                             </div>
@@ -500,7 +500,7 @@ $#aa5336: rgba(170,83,54,1);
                                 <form>
                                     <div class="mb-3">
                                         <label for="" class="form-label">Nomor Whatsapp Orang Tua/Wali</label>
-                                        <input type="" class="form-control bg-dark text-white border-1" id="whatsapportu" aria-describedby="emailHelp">
+                                        <input type="text" inputmode="numeric" class="form-control bg-dark text-white border-1" id="whatsapportu" aria-describedby="emailHelp">
                                     </div>
                                 </form>
                             </div>
@@ -519,9 +519,9 @@ $#aa5336: rgba(170,83,54,1);
                                     <div class="mb-3">
                                         <label class="form-label required">Jurusan</label>
                                         <select id="jurusan" class="form-select bg-dark text-white border-1" aria-label="">
-                                            <option value="1">DKV - Desain Komunikasi Visual</option>
-                                            <option value="2">MM - Multi Media</option>
-                                            <option value="3">AP - Administrasi Perkantoran</option>
+                                            <option value="DKV - Desain Komunikasi Visual">DKV - Desain Komunikasi Visual</option>
+                                            <option value="MM - Multi Media">MM - Multi Media</option>
+                                            <option value="AP - Administrasi Perkantoran">AP - Administrasi Perkantoran</option>
                                         </select>
                                     </select>
                                     </div>
