@@ -1,17 +1,6 @@
-if (nama === ""){
-    alert("Nama wajib diisi!")
-    return
-}
-
 const nomor = document.getElementById("whatsappsiswa").value
 
-if(isNaN(nomor)){
-
-    alert("Nomor whatsapp harus angka!")
-    return;
-}
-
-const scriptURL = "https://script.google.com/macros/s/AKfycbyHz4z8PmAHYs14QTCy3L_p3H1rAf4Wl3I-C93o2SxWEOReajNIMe6KzVD8dL1AnsAt3g/exec";
+const scriptURL = "https://script.google.com/macros/library/d/1if7q98z7auVhY9YLcNmpLHqK3mKKMGNnLxs6R9x78rgTxpqIlMTTtsVk/2";
 
 document
 .getElementById("submitBtn")
@@ -35,6 +24,13 @@ document
         asalsmp: document.getElementById("asalsmp").value,
         jurusan: document.getElementById("jurusan").value
     };
+
+    for(let value in data){
+        if(data[value] === ""){
+            alert("Data tidak boleh kosong!")
+            return;
+        }
+    }
 
     await fetch(scriptURL, {
 

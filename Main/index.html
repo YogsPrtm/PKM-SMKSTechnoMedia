@@ -6,131 +6,10 @@
     <title>SMKS Techno Media</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-<style>
+    <link rel="stylesheet" href="../Main/style.css">
 
-    /* CSS HEX 
---#5431aa: #5431aa;
---#522ac9: #522ac9;
---#f96606: #f96606;
---#1c1219: #1c1219;
---#dad5e1: #dad5e1;
---#9676c1: #9676c1;
---#382365: #382365;
---#5420da: #5420da;
---#aa5336: #aa5336;
 
-SCSS HEX
-$#5431aa: #5431aa;
-$#522ac9: #522ac9;
-$#f96606: #f96606;
-$#1c1219: #1c1219;
-$#dad5e1: #dad5e1;
-$#9676c1: #9676c1;
-$#382365: #382365;
-$#5420da: #5420da;
-$#aa5336: #aa5336;
-
-SCSS RGB 
-$#5431aa: rgba(84,49,170,1);
-$#522ac9: rgba(82,42,201,1);
-$#f96606: rgba(249,102,6,1);
-$#1c1219: rgba(28,18,25,1);
-$#dad5e1: rgba(218,213,225,1);
-$#9676c1: rgba(150,118,193,1);
-$#382365: rgba(56,35,101,1);
-$#5420da: rgba(84,32,218,1);
-$#aa5336: rgba(170,83,54,1);
-*/
-    body{
-        background-color: whitesmoke;
-    }
-
-    .carousel-item{
-        height: 32rem;
-
-    }
-    .navbar-collapse{
-        background-color: #5431aa;
-    }
-    .navbar {
-        background-color: #5431aa;
-    }
-    .navbar-toggler{
-        background-color: white;
-    }
-    .logotext{
-        color: white;
-    }
-    .overlay-image {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            top: 0;
-            background-position: center;
-            background-size: cover;
-            opacity: 1;
-            background-color: rgba(0, 0, 0, 0.5);
-            
-
-    }
-    .overlay-image:after {
-        content:"";
-        position:absolute;
-        top:0;
-        bottom:0;
-        left:0;
-        right:0;
-        background:rgba(0,0,0,0.6);
-    }
-    ul{
-            list-style: none;
-    }
-
-    .daftar {
-        background-color: #522ac9;
-        color: white;
-    }
-
-    .daftar:hover{
-        background-color: #3c1f92;
-
-    }
-
-    .card-cover{
-        background-position: center;
-        background-size: cover;
-        background-color: rgba(0, 0, 0, 0.7); 
-        background-blend-mode: multiply;
-        
-    }
-
-    .btn-keahlian{
-        background-color: #522ac9;
-        color: white;
-    }
-    .btn-keahlian:hover{
-        background-color: #382365;
-    }
-    .btnnav{
-        background-color: #5431aa;
-        color: white;
-        border: 0;
-    }
-    .btnnav:hover{
-        background-color: #382365 ;
-        border: 0;
-        color: white;
-    }
-    .card-header{
-        background-color: #5229CB;
-    }
-    .visi{
-        color: white;
-    }
-
-    
-</style>
+   
 </head>
 <body>
 <!-- NAVIGATION BAR -->
@@ -234,44 +113,171 @@ $#aa5336: rgba(170,83,54,1);
                 <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
                     <div class="col">
                         <div class="card card-cover h-100 overflow-hidden  rounded-4 shadow-lg" style="background-image: url('../Assets/dkv.png');" onclick="onClick()">
-                            <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1" id="dkvcard">
-                                <h3 class="pt-5 mt-4 mb-4 display-6 lh-1 fw-bold">Desain Komunikasi Visual</h3>
-                                <ul class="d-flex list-unstyled mt-1">
-                                    <li class="d-flex align-items-center me-1">
-                                        <button class="btn btn-md btn-keahlian">Daftar</button>
-                                    </li>
-                                </ul>
+                            <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1 justify-content-center align-items-center" id="dkvcard">
+                                <h3 class="display-6 lh-1 fw-bold text-center">Desain Komunikasi Visual</h3>
                             </div>
                         </div>
                     </div>
                     <div class="col">
                         <div class="card card-cover h-100 overflow-hidden rounded-4 shadow-lg" style="background-image: url('../Assets/multimedia.jpg');">
-                            <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-                                <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Multi Media</h3>
-                                <ul class="d-flex list-unstyled mt-auto">
-                                    <li class="d-flex align-items-center me-3">
-                                        <button class="btn btn-md btn-keahlian">Daftar</button>
-                                    </li>
-                                   
-                                </ul>
+                            <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1 justify-content-center align-items-center">
+                                <h3 class="display-6 lh-1 fw-bold text-center">Multi Media</h3>
                             </div>
                         </div>
                     </div>
                     <div class="col">
                         <div class="card card-cover h-100 overflow-hidden rounded-4 shadow-lg" style="background-image: url('../Assets/perkantoran.jpg');">
-                            <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-                                <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Administrasi Perkantoran</h3>
-                                <ul class="d-flex list-unstyled mt-auto">
-                                     <li class="d-flex align-items-center me-3 ">
-                                        <button class="btn btn-md btn-keahlian">Daftar</button>
-                                    </li>
-                                </ul>
+                            <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1 justify-content-center align-items-center">
+                                <h3 class="display-6 lh-1 fw-bold text-center">Administrasi Perkantoran</h3>
+
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
 
+
+<!-- BERITA -->
+
+<div class="container mt-5">
+
+    <h2 class="pb-2 border-bottom mb-5">Berita</h2>
+
+    <div id="beritaCarousel" class="carousel slide" data-bs-ride="carousel">
+
+        <div class="carousel-inner">
+
+            <!-- Slide 1 -->
+            <div class="carousel-item active">
+
+                <div class="row mb-2">
+
+                    <div class="col-md-6">
+                        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                            <div class="col p-4 d-flex flex-column position-static">
+                                <strong class="d-inline-block mb-2 text-primary-emphasis">Sekolah</strong>
+                                <h3 class="mb-0">Featured post</h3>
+                                <div class="mb-1 text-body-secondary">Nov 12</div>
+                                <p class="card-text mb-auto">
+                                    This is a wider card with supporting text below.
+                                </p>
+                                <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
+                                    Continue reading
+                                </a>
+                            </div>
+
+                            <div class="col-auto d-none d-lg-block">
+                                <svg class="bd-placeholder-img" height="250" width="200">
+                                    <rect width="100%" height="100%" fill="#55595c"></rect>
+                                    <text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                            <div class="col p-4 d-flex flex-column position-static">
+                                <strong class="d-inline-block mb-2 text-success-emphasis">Prestasi</strong>
+                                <h3 class="mb-0">Post title</h3>
+                                <div class="mb-1 text-body-secondary">Nov 11</div>
+                                <p class="mb-auto">
+                                    This is a wider card with supporting text below.
+                                </p>
+                                <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
+                                    Continue reading
+                                </a>
+                            </div>
+
+                            <div class="col-auto d-none d-lg-block">
+                                <svg class="bd-placeholder-img" height="250" width="200">
+                                    <rect width="100%" height="100%" fill="#55595c"></rect>
+                                    <text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="carousel-item">
+
+                <div class="row mb-2">
+
+                    <div class="col-md-6">
+                        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                            <div class="col p-4 d-flex flex-column position-static">
+                                <strong class="d-inline-block mb-2 text-warning-emphasis">Kegiatan</strong>
+                                <h3 class="mb-0">Berita Ketiga</h3>
+                                <div class="mb-1 text-body-secondary">Nov 10</div>
+                                <p class="mb-auto">
+                                    Isi singkat berita ketiga.
+                                </p>
+                                <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
+                                    Continue reading
+                                </a>
+                            </div>
+
+                            <div class="col-auto d-none d-lg-block">
+                                <svg class="bd-placeholder-img" height="250" width="200">
+                                    <rect width="100%" height="100%" fill="#55595c"></rect>
+                                    <text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                            <div class="col p-4 d-flex flex-column position-static">
+                                <strong class="d-inline-block mb-2 text-danger-emphasis">Info</strong>
+                                <h3 class="mb-0">Berita Keempat</h3>
+                                <div class="mb-1 text-body-secondary">Nov 09</div>
+                                <p class="mb-auto">
+                                    Isi singkat berita keempat.
+                                </p>
+                                <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
+                                    Continue reading
+                                </a>
+                            </div>
+
+                            <div class="col-auto d-none d-lg-block">
+                                <svg class="bd-placeholder-img" height="250" width="200">
+                                    <rect width="100%" height="100%" fill="#55595c"></rect>
+                                    <text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Button Prev -->
+            <button class="carousel-control-prev custom-carousel-prev" type="button" data-bs-target="#beritaCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon bg-dark rounded-circle p-3" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+
+</button>
+
+        <!-- Button Next -->
+        <button class="carousel-control-next custom-carousel-next" 
+        type="button" 
+        data-bs-target="#beritaCarousel" 
+        data-bs-slide="next">
+
+        <span class="carousel-control-next-icon bg-dark rounded-circle p-3" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+
+    </div>
+
+</div>
 
 <!-- Tentang Kami -->
 
@@ -535,7 +541,7 @@ $#aa5336: rgba(170,83,54,1);
                         </div>
                         <div class="row gx-4 gy-4 pb-2">
                             <div class="col-12">
-                                <button id="submitBtn" type="button" class="btn btn-md px-5 py-2 w-50 fs-4 text-white" onclick="clearScreen()" style="background-color: #382365 !important;">Daftar</button>
+                                <button id="submitBtn" type="button" class="btn btn-md px-5 py-2 w-50 fs-4 text-white" style="background-color: #382365 !important;">Daftar</button>
                             </div>
                         </div>
                     </div>   

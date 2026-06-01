@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMKS Techno Media</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../Main/style.css">
+
+
+</head>
+<body>
+<!-- NAVIGATION BAR -->
+
+<nav class="navbar sticky-top bg-body-primary navbar-expand-lg pt-0 pb-0">
+  <div class="container-fluid d-flex justify-content-between align-items-center  border-bottom-dark">
+    
+    <!-- Brand group: Logo and Title stay left-aligned together -->
+    <a class="navbar-brand d-flex align-items-center m-0" href="#">
+      <img src="../Assets/LOGOSMK.png" alt="Logo" width="70" class="me-2">
+      <h3 class="m-0 text-nowrap logotext">SMKS Techno Media</h3>
+    </a>
+
+    <!-- Toggler Button: Stays perfectly on the right on mobile -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+  </div>
+</nav>
+    
+
+    <!-- FORM -->
+
+<div class="container mt-5 pt-5 mb-5">
+
+    <div class="row justify-content-center">
+
+        <div class="col-12 col-lg-8">
+
+            <div class="card text-white shadow-lg border-0"
+                 style="background-color:#5229CB;">
+
+                <div class="card-body p-4 p-md-5">
+
+                    <h3 class="text-center mb-5">
+                        <b>Input Berita Sekolah</b>
+                    </h3>
+
+                    <form>
+
+                        <div class="mb-4">
+                            <label class="form-label">Judul Berita</label>
+                            <input 
+                                type="text"
+                                id="judul"
+                                class="form-control bg-dark text-white border-secondary"
+                                placeholder="Masukkan judul berita">
+                        </div>
+
+                        <div class="mb-4">
+                            <label class="form-label">Tanggal Berita</label>
+                            <input 
+                                type="date"
+                                id="tanggal"
+                                class="form-control bg-dark text-white border-secondary">
+                        </div>
+
+                        <div class="mb-4">
+                            <label class="form-label">Kategori</label>
+                            <input 
+                                type="text"
+                                id="kategori"
+                                class="form-control bg-dark text-white border-secondary"
+                                placeholder="Contoh: Prestasi, Kegiatan, Pengumuman">
+                        </div>
+
+                        <div class="mb-4">
+                            <label class="form-label">URL Gambar</label>
+                            <input 
+                                type="text"
+                                id="gambar"
+                                class="form-control bg-dark text-white border-secondary"
+                                placeholder="Masukkan link gambar">
+                        </div>
+
+                        <div class="mb-4">
+                            <label class="form-label">Isi Berita</label>
+                            <textarea 
+                                id="isi"
+                                class="form-control bg-dark text-white border-secondary"
+                                rows="5"
+                                placeholder="Tulis isi berita"></textarea>
+                        </div>
+
+                        <div class="mb-4">
+                            <label class="form-label">Link Berita</label>
+                            <input 
+                                type="text"
+                                id="link"
+                                class="form-control bg-dark text-white border-secondary"
+                                placeholder="Masukkan link detail berita">
+                        </div>
+
+                        <div class="d-flex justify-content-center mt-5">
+                            <button 
+                                type="button"
+                                id="submitBerita"
+                                class="btn px-5 py-2 fs-5 text-white"
+                                style="background-color:#382365;">
+                                Simpan Berita
+                            </button>
+                        </div>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+</form>
+
+</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="admin.js"></script>
+</body>
+</html>
