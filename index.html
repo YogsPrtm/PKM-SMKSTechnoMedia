@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMKS Techno Media</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./style.css">
+
+
+   
+</head>
+<body>
+<!-- NAVIGATION BAR -->
+
+<nav class="navbar sticky-top bg-body-primary navbar-expand-lg pt-0 pb-0">
+  <div class="container-fluid d-flex justify-content-between align-items-center  border-bottom-dark">
+    
+    <!-- Brand group: Logo and Title stay left-aligned together -->
+    <a class="navbar-brand d-flex align-items-center m-0" href="#">
+      <img src="../Assets/LOGOSMK.png" alt="Logo" width="70" class="me-2">
+      <h3 class="m-0 text-nowrap logotext">SMKS Techno Media</h3>
+    </a>
+
+    <!-- Toggler Button: Stays perfectly on the right on mobile -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Navigation Links: Collapses into a clean vertical list on mobile -->
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item pt-1">
+          <a href="#myCarousel" class="px-2"><button class="btn  btnnav">Home</button></a>
+        </li>
+        <li class="nav-item pt-1">
+         <a href="#custom-cards" class="px-2"><button class="btn  btnnav">Kompetensi Keahlian</button></a>
+        </li>
+        <li class="nav-item pt-1">
+         <a href="#tentang" class="px-2"><button class="btn  btnnav">Tentang Kami</button></a>
+        </li>
+        <li class="nav-item pt-1">
+         <a href="#berita" class="px-2"><button class="btn  btnnav">Berita</button></a>
+        </li>
+        <li class="nav-item pt-1">
+         <a href="#ekskul" class="px-2"><button class="btn  btnnav">Ekstrakurikuler</button></a>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+</nav>
+    
+<!-- CAROUSEL -->
+
+     <div id="myCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" >
+            <ul class="carousel-indicators">
+                <li data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></li>
+                <li data-bs-target="#myCarousel" data-bs-slide-to="1"></li>
+                <li data-bs-target="#myCarousel" data-bs-slide-to="2"></li>
+            </ul>
+            <div class="carousel-inner">]
+                <div class="carousel-item active">
+                    <div class="overlay-image" style="background-image:url(../Assets/pic2.jpeg)"></div>
+                    <div class="container">
+                        <div class="carousel-caption">
+                                <h1>SMKS Techno Media</h1>
+                                <p class="opacity-75">Lulusan Hebat: Bekerja, Berwirausaha, Melanjutkan</p>
+                                <p>
+                                    <a class="btn btn-lg daftar" href="#FormDaftar">Pendaftaran</a>
+                                </p>
+                            </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="overlay-image" style="background-image:url(../Assets/pic1.jpeg)"></div>
+                    <div class="container">
+                        <div class="carousel-caption">
+                                <h1>SMKS Techno Media</h1>
+                                <p class="opacity-75">Lulusan Hebat: Bekerja, Berwirausaha, Melanjutkan</p>
+                                <p>
+                                    <a class="btn btn-lg daftar" href="#FormDaftar">Pendaftaran</a>
+                                </p>
+                            </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="overlay-image" style="background-image:url(../Assets/pic3.jpeg)"></div>
+                    <div class="container">
+                        <div class="carousel-caption">
+                                <h1>SMKS Techno Media</h1>
+                                <p class="opacity-75">Lulusan Hebat: Bekerja, Berwirausaha, Melanjutkan</p>
+                                <p>
+                                    <a class="btn btn-lg daftar" href="#FormDaftar">Pendaftaran</a>
+                                </p>
+                            </div>
+                    </div>
+                </div>
+            </div>     
+            <a href="#myCarousel" class="carousel-control-prev" role="button" data-bs-slide="prev">
+                <span class="sr-only"></span>
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </a>
+            <a href="#myCarousel" class="carousel-control-next" role="button" data-bs-slide="next">
+                <span class="sr-only"></span>
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </a> 
+        </div>
+
+
+<!-- Custom Card Grid -->
+
+            <div class="container px-4 py-5" id="custom-cards">
+                <h2 class="pb-2 border-bottom">Kompetensi Keahlian</h2>
+                <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+                    <div class="col">
+                        <div class="card card-cover h-100 overflow-hidden  rounded-4 shadow-lg" style="background-image: url('../Assets/dkv.png');" onclick="onClick()">
+                            <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1 justify-content-center align-items-center" id="dkvcard">
+                                <h3 class="display-6 lh-1 fw-bold text-center">Desain Komunikasi Visual</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card card-cover h-100 overflow-hidden rounded-4 shadow-lg" style="background-image: url('../Assets/multimedia.jpg');">
+                            <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1 justify-content-center align-items-center">
+                                <h3 class="display-6 lh-1 fw-bold text-center">Multi Media</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card card-cover h-100 overflow-hidden rounded-4 shadow-lg" style="background-image: url('../Assets/perkantoran.jpg');">
+                            <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1 justify-content-center align-items-center">
+                                <h3 class="display-6 lh-1 fw-bold text-center">Administrasi Perkantoran</h3>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+<!-- BERITA -->
+
+<div class="container mt-5" id="berita">
+
+    <h2 class="pb-2 border-bottom mb-5">Berita</h2>
+
+    <div id="beritaCarousel" class="carousel slide" data-bs-ride="carousel">
+
+        <div class="carousel-inner" id="newsContainer">
+
+            <!-- Slide 1 -->
+            <div class="carousel-item active">
+
+                <div class="row mb-2">
+
+                    <div class="col-md-6">
+                        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                            <div class="col p-4 d-flex flex-column position-static">
+                                <strong class="d-inline-block mb-2 text-primary-emphasis">Sekolah</strong>
+                                <h3 class="mb-0">Featured post</h3>
+                                <div class="mb-1 text-body-secondary">Nov 12</div>
+                                <p class="card-text mb-auto">
+                                    This is a wider card with supporting text below.
+                                </p>
+                                <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
+                                    Continue reading
+                                </a>
+                            </div>
+
+                            <div class="col-auto d-none d-lg-block">
+                                <svg class="bd-placeholder-img" height="250" width="200">
+                                    <rect width="100%" height="100%" fill="#55595c"></rect>
+                                    <text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                            <div class="col p-4 d-flex flex-column position-static">
+                                <strong class="d-inline-block mb-2 text-success-emphasis">Prestasi</strong>
+                                <h3 class="mb-0">Post title</h3>
+                                <div class="mb-1 text-body-secondary">Nov 11</div>
+                                <p class="mb-auto">
+                                    This is a wider card with supporting text below.
+                                </p>
+                                <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
+                                    Continue reading
+                                </a>
+                            </div>
+
+                            <div class="col-auto d-none d-lg-block">
+                                <svg class="bd-placeholder-img" height="250" width="200">
+                                    <rect width="100%" height="100%" fill="#55595c"></rect>
+                                    <text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="carousel-item">
+
+                <div class="row mb-2">
+
+                    <div class="col-md-6">
+                        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                            <div class="col p-4 d-flex flex-column position-static">
+                                <strong class="d-inline-block mb-2 text-warning-emphasis">Kegiatan</strong>
+                                <h3 class="mb-0">Berita Ketiga</h3>
+                                <div class="mb-1 text-body-secondary">Nov 10</div>
+                                <p class="mb-auto">
+                                    Isi singkat berita ketiga.
+                                </p>
+                                <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
+                                    Continue reading
+                                </a>
+                            </div>
+
+                            <div class="col-auto d-none d-lg-block">
+                                <svg class="bd-placeholder-img" height="250" width="200">
+                                    <rect width="100%" height="100%" fill="#55595c"></rect>
+                                    <text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                            <div class="col p-4 d-flex flex-column position-static">
+                                <strong class="d-inline-block mb-2 text-danger-emphasis">Info</strong>
+                                <h3 class="mb-0">Berita Keempat</h3>
+                                <div class="mb-1 text-body-secondary">Nov 09</div>
+                                <p class="mb-auto">
+                                    Isi singkat berita keempat.
+                                </p>
+                                <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
+                                    Continue reading
+                                </a>
+                            </div>
+
+                            <div class="col-auto d-none d-lg-block">
+                                <svg class="bd-placeholder-img" height="250" width="200">
+                                    <rect width="100%" height="100%" fill="#55595c"></rect>
+                                    <text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Button Prev -->
+            <button class="carousel-control-prev custom-carousel-prev" type="button" data-bs-target="#beritaCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon bg-dark rounded-circle p-3" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+
+</button>
+
+        <!-- Button Next -->
+       <button class="carousel-control-next custom-carousel-next"
+                type="button"
+                data-bs-target="#beritaCarousel"
+                data-bs-slide="next">
+
+            <span class="carousel-control-next-icon bg-dark rounded-circle p-3" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+
+        </button>
+    </div>
+
+</div>
+
+<!-- Tentang Kami -->
+
+             <div class="container col-xxl-8 px-4 py-5" id="tentang">
+                <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+                    <div class="col-10 col-sm-8 col-lg-6">
+                        <img src="../Assets/LOGOSMK.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+                    </div>
+                    <div class="col-lg-6">
+                        <h1 class="display-6 fw-bold text-body-emphasis lh-1 mb-3 tentang-kami">Tentang Kami</h1>
+                        <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis nam ducimus qui sequi dolorum corrupti a, laudantium excepturi maiores, veniam beatae dolores, eaque sapiente. Nostrum voluptates quae voluptas aut aliquam.</p>
+                        
+                    </div>
+                </div>
+            </div>
+
+<!-- VISI MISI -->
+         
+        <div class="container col-xxl-5">
+            <div class="card mb-5">
+                <div class="card-header text-center">
+                    <h4 class="h4 visi">Visi</h4>
+                </div>    
+                <div class="card-bod text-center">
+                    <figure>
+                        <blockquote class="blockquote">
+                            <h4 class="h4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, debitis delectus! Beatae a soluta enim quas, exercitationem odio quia! Tempore dolore assumenda sunt necessitatibus placeat tenetur rem, deleniti ea delectus!</h3>
+                        </blockquote>
+                    </figure>
+                </div>        
+            </div>
+            <div class="card mt-5">
+                <div class="card-header text-center">
+                    <h4 class="h4 visi">Misi</h4>
+                </div>    
+                <div class="card-bod text-center">
+                    <figure>
+                        <blockquote class="blockquote">
+                            <p>lorem</p>
+                            <p>lorem</p>
+                            <p>lorem</p>
+                        </blockquote>
+                    </figure>
+                </div>        
+            </div>
+        </div>
+
+<!-- EKSTRAKURIKULER -->
+
+
+    <div class="container pt-5 py-4 mt-2" id="ekskul">
+        <h2 class="pb-2 border-bottom">Ekstrakurikuler</h2>
+        <div class="row mb-2 mt-5">
+                    <div class="col-md-6">
+                        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative bg-ekskul">
+                            <div class="col p-4 d-flex flex-column position-static">
+                                <h3 class="mb-2 judul-ekskul">Ekskul Tari</h3>
+                                <p class="card-text mb-auto tentang-ekskul">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus labore doloribus perspiciatis! Veniam, vero neque deleniti non libero minus quos ipsum odit deserunt voluptate perspiciatis accusamus quia dolorum enim rem?</p>
+                            </div>
+                            <div class="col-auto d-none d-lg-block">
+                                <svg aria-label="Placeholder: Thumbnail" class="bd-placeholder-img " height="250" preserveAspectRatio="xMidYMid slice" role="img" width="200" xmlns="http://www.w3.org/2000/svg">
+                                    <title>Placeholder</title>
+                                    <rect width="100%" height="100%" fill="#55595c"></rect>
+                                    <text x="50%" y="50%" fill="#eceeef" dy=".3em">Foto</text>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                            <div class="col p-4 d-flex flex-column position-static">
+                                <h3 class="mb-2">Ekskul Silat</h3>
+                                <p class="card-text mb-auto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus labore doloribus perspiciatis! Veniam, vero neque deleniti non libero minus quos ipsum odit deserunt voluptate perspiciatis accusamus quia dolorum enim rem?</p>
+                            </div>
+                            <div class="col-auto d-none d-lg-block">
+                                <svg aria-label="Placeholder: Thumbnail" class="bd-placeholder-img " height="250" preserveAspectRatio="xMidYMid slice" role="img" width="200" xmlns="http://www.w3.org/2000/svg">
+                                    <title>Placeholder</title>
+                                    <rect width="100%" height="100%" fill="#55595c"></rect>
+                                    <text x="50%" y="50%" fill="#eceeef" dy=".3em">Foto</text>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mb-2 mt-5">
+                    <div class="col-md-6">
+                        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                            <div class="col p-4 d-flex flex-column position-static">
+                                <h3 class="mb-2">Ekskul Futsal</h3>
+                                <p class="card-text mb-auto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus labore doloribus perspiciatis! Veniam, vero neque deleniti non libero minus quos ipsum odit deserunt voluptate perspiciatis accusamus quia dolorum enim rem?</p>
+                            </div>
+                            <div class="col-auto d-none d-lg-block">
+                                <svg aria-label="Placeholder: Thumbnail" class="bd-placeholder-img " height="250" preserveAspectRatio="xMidYMid slice" role="img" width="200" xmlns="http://www.w3.org/2000/svg">
+                                    <title>Placeholder</title>
+                                    <rect width="100%" height="100%" fill="#55595c"></rect>
+                                    <text x="50%" y="50%" fill="#eceeef" dy=".3em">Foto</text>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                            <div class="col p-4 d-flex flex-column position-static">
+                                <h3 class="mb-2">Ekskul Corfball</h3>
+                                <p class="card-text mb-auto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus labore doloribus perspiciatis! Veniam, vero neque deleniti non libero minus quos ipsum odit deserunt voluptate perspiciatis accusamus quia dolorum enim rem?</p>
+                            </div>
+                            <div class="col-auto d-none d-lg-block">
+                                <svg aria-label="Placeholder: Thumbnail" class="bd-placeholder-img " height="250" preserveAspectRatio="xMidYMid slice" role="img" width="200" xmlns="http://www.w3.org/2000/svg">
+                                    <title>Placeholder</title>
+                                    <rect width="100%" height="100%" fill="#55595c"></rect>
+                                    <text x="50%" y="50%" fill="#eceeef" dy=".3em">Foto</text>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    </div>
+
+
+<!-- Formulir Pendaftaran -->
+<div class="container mt-5 pt-5 mb-5 pb-5">
+    <div class="row justify-content-center" id="FormDaftar">
+         <div class="col-12 col-lg-10">
+            <div class="card mt-5 text-center mx-auto w-100 text-white" 
+                style="background-color:#5229CB;">
+                <div class="card-body">
+                    <h3 class="card-title mb-3"><b>Formulir Pendaftaran</b></h3>
+                    <h3 class="card-title mb-5"><b>SMKS Techno Media</b></h3>
+                    <div class="container overflow-hidden text-center">
+                        <div class="row gx-4 gy-4">
+                            <div class="col-12 col-md-6">
+                                <form>
+                                    <div class="mb-3">
+                                        <label for="" class="form-label">Nama Lengkap</label>
+                                        <input type="text" class="form-control bg-dark text-white border-1" id="nama" aria-describedby="emailHelp">
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <form>
+                                    <div class="mb-3">
+                                        <label class="form-label required">
+                                            Jenis Kelamin
+                                        </label>
+
+                                        <select id="gender" class="form-select bg-dark text-white border-1" aria-label="Default select example">
+                                            <option selected>Jenis Kelamin</option>
+                                            <option value="Laki-Laki">Laki Laki</option>
+                                            <option value="Perempuan">Perempuan</option>
+                                        </select>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="row gx-4 gy-4">
+                            <div class="col-12 col-md-6">
+                                <form>
+                                    <div class="mb-3">
+                                        <label for="" class="form-label">NISN SMP</label>
+                                        <input type="text" inputmode="numeric" id="nisn" class="form-control bg-dark text-white border-1" aria-describedby="emailHelp">
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="col-12 col-md-6 ">
+                                <form>
+                                    <div class="mb-3">
+                                        <label for="" class="form-label">NIK</label>
+                                        <input type="text" inputmode="numeric" id="nik" class="form-control bg-dark text-white border-1" aria-describedby="emailHelp">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="row gx-4 gy-4">
+                            <div class="col-12 col-md-6">
+                                <form>
+                                    <div class="mb-3">
+                                        <label for="" class="form-label">Tempat Lahir</label>
+                                        <input type="text" id="tempatlahir" class="form-control bg-dark text-white border-1" aria-describedby="emailHelp">
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <form>
+                                    <div class="mb-3">
+                                        <label for="" class="form-label">Tanggal Lahir</label>
+                                        <input type="date" id="tanggallahir" class="form-control bg-dark text-white border-1" aria-describedby="emailHelp">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="row gx-4 gy-4 mb-3">
+                            <div class="col-12 col-md-6">
+                                <form>
+                                    <div class="mb-3">
+                                        <label for="" class="form-label">Agama</label>
+                                        <input type="text" id="agama" class="form-control bg-dark text-white border-1" aria-describedby="emailHelp">
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <form>
+                                    <div class="mb-3">
+                                        <label for="" class="form-label">Nomor Whatsapp Siswa</label>
+                                        <input type="text" inputmode="numeric" id="whatsappsiswa"  required pattern="[0-9]+" class="form-control bg-dark text-white border-1" aria-describedby="emailHelp">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="row gx-4 gy-4 mb-3">
+                            <div class="col-12"z>
+                                <label class="form-label required">Alamat Lengkap</label>
+                                <textarea id="alamat" class="form-control bg-dark text-white border-1" rows="3" placeholder="Masukkan alamat lengkap" required="" py-5 px-5></textarea>
+                            </div>
+                        </div>
+                        <div class="row gx-4 gy-4 mb-3">
+                            <div class="col-12 col-md-6">
+                                <form>
+                                    <div class="mb-3">
+                                        <label for="" class="form-label">Nama Orang Tua/Wali</label>
+                                        <input type="text" class="form-control bg-dark text-white border-1" id="orangtua" aria-describedby="emailHelp">
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <form>
+                                    <div class="mb-3">
+                                        <label for="" class="form-label">Nomor Whatsapp Orang Tua/Wali</label>
+                                        <input type="text" inputmode="numeric" class="form-control bg-dark text-white border-1" id="whatsapportu" aria-describedby="emailHelp">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="row row gx-4 gy-4">
+                            <div class="col-12 col-md-6">
+                                <form>
+                                    <div class="mb-3">
+                                        <label for="" class="form-label">Asal SMP</label>
+                                        <input type="" class="form-control bg-dark text-white border-1" id="asalsmp" aria-describedby="emailHelp">
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="col-12 col-md-6 mb-3">
+                                <form>
+                                    <div class="mb-3">
+                                        <label class="form-label required">Jurusan</label>
+                                        <select id="jurusan" class="form-select bg-dark text-white border-1" aria-label="">
+                                            <option value="DKV - Desain Komunikasi Visual">DKV - Desain Komunikasi Visual</option>
+                                            <option value="MM - Multi Media">MM - Multi Media</option>
+                                            <option value="AP - Administrasi Perkantoran">AP - Administrasi Perkantoran</option>
+                                        </select>
+                                    </select>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="row gx-4 gy-4 mb-5">
+                            <div class="col-12">
+                                <h5 class="h5">Pastikan data yang diisi benar dan lengkap<br>Kami akan menghubungi anda untuk proses lebih lanjut.</h5>
+                            </div>
+                        </div>
+                        <div class="row gx-4 gy-4 pb-2">
+                            <div class="col-12">
+                                <button id="submitBtn" type="button" class="btn btn-md px-5 py-2 w-50 fs-4 text-white" style="background-color: #382365 !important;">Daftar</button>
+                            </div>
+                        </div>
+                    </div>   
+                </div>
+            </div>
+
+         </div>
+    </div>
+</div>
+</div>
+
+
+<!-- 3 CARD HUBUNGI KAMI -->
+
+<div class="container mt-5 pt-5">
+    <div class="d-flex justify-content-center mb-5">
+    <h2 class="pb-2 border-bottom border-3">Hubungi Kami</h2>
+    </div>
+    <div class="row justify-content-center">
+
+        <div class="col-12 col-lg-10">
+
+            <div class="row g-4">
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-center mb-2">
+                                <i class="bi bi-pin-map-fill fs-1 mb-3"></i>
+                            </div>
+                            <h5 class="card-title text-center fs-3 mb-4"><b>Alamat Sekolah</b></h5>
+                            <p class="card-text text-center fs-4">SMKS Techno Media</p>
+                            <p class="card-text text-center mb-0 pb-0">Jl. Kodiklat Tni Ampera No.1</p>
+                            <p class="card-text text-center"> Buaran, Kec. Serpong, Kota Tangerang Selatan, Banten 15310</p>
+                            <p class="card-text text-center"><a href="https://share.google/LpBedEbTV2xUutPc0">Google Maps <i class="bi bi-arrow-up-right-circle-fill"></i></a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-center mb-2">
+                                <i class="bi bi-telephone-fill fs-1 mb-3"></i>
+                            </div>
+                            <h5 class="card-title text-center fs-3 mb-4"><b>Telepon</b></h5>
+                            <p class="card-text text-center fs-4">(021) 7563191</p>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-center mb-2">
+                               <i class="bi bi-envelope-at-fill fs-1 mb-3"></i>
+                            </div>
+                            <h5 class="card-title text-center fs-3 mb-4"><b>Email dan Sosial Media</b></h5>
+                            <p class="card-text text-center fs-5">smkstechnomedia@gmail.com</p>
+                            <div class="d-flex justify-content-center mb-2 gap-4">
+                            <a href="https//www.google.com" style="color: black !important;"><i class="bi bi-tiktok fs-3"></i></a>
+                             <a href="https//www.google.com" style="color: black !important;"><i class="bi bi-instagram fs-3"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- FOOTER -->
+<div class="border-top border-5 mt-5 py-0" style="background-color:#5229CB;">        
+ <div class="container">
+
+        <footer class="row py-5">
+
+            <div class="col-12 col-md-3 mb-4">
+                <img src="../Assets/LOGOSMK.png" style="width:150px;" alt="">
+                <p class="text-light">Lulusan Hebat: Bekerja, Berwirausaha, Melanjutkan</p>
+            </div>
+
+            <div class="col-12 col-md-3 mb-4">
+                <h5 class="text-light mb-4">Menu</h5>
+
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2">
+                        <a href="#" class="nav-link p-0 text-light">
+                            Home
+                        </a>
+                    </li>
+
+                    <li class="nav-item mb-2">
+                        <a href="#" class="nav-link p-0 text-light">
+                            Kompetensi Keahlian
+                        </a>
+                    </li>
+
+                    <li class="nav-item mb-2">
+                        <a href="#" class="nav-link p-0 text-light">
+                            Ekstrakurikuler
+                        </a>
+                    </li>
+
+                    <li class="nav-item mb-2">
+                        <a href="#" class="nav-link p-0 text-light">
+                            Tentang Kami
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-12 col-md-3 mb-4">
+                <h5 class="text-light mb-4">Kompetensi Keahlian</h5>
+
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2">
+                        <a href="#" class="nav-link p-0 text-light">
+                            DKV - Desain Komunikasi Visual
+                        </a>
+                    </li>
+
+                    <li class="nav-item mb-2">
+                        <a href="#" class="nav-link p-0 text-light">
+                            MM - Multi Media
+                        </a>
+                    </li>
+
+                    <li class="nav-item mb-2">
+                        <a href="#" class="nav-link p-0 text-light">
+                            AP - Administrasi Perkantoran
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-12 col-md-3 mb-4">
+                <h5 class="text-light mb-4">Jam Operasional</h5>
+
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2">
+                        <a href="#" class="nav-link p-0 text-light">
+                            Senin - Jumat : 07:00 - 16:00
+                        </a>
+                    </li>
+
+                    <li class="nav-item mb-2">
+                        <a href="#" class="nav-link p-0 text-light">
+                            Sabtu & Minggu : Tutup
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+        </footer>
+
+    </div>
+<div class="container">
+    <div class="text-center py-3 border-top border-secondary">
+        <p class="text-light mb-0">
+            &copy;2026 SMKS Techno Media. Semua Hak Dilindungi.
+        </p>
+
+    </div>
+</div>
+</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</body>
+</html3
