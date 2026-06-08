@@ -110,32 +110,44 @@
 
 
 <!-- Custom Card Grid -->
-
             <div class="container px-4 py-5" id="custom-cards">
                 <h2 class="pb-2 border-bottom">Kompetensi Keahlian</h2>
+                <div id="detail">
                 <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
                     <div class="col">
-                        <div class="card card-cover h-100 overflow-hidden  rounded-4 shadow-lg" style="background-image: url('./Assets/dkv.png');" onclick="onClick()">
+                        <div class="card card-cover h-100 overflow-hidden  rounded-4 shadow-lg" style="background-image: url('./Assets/dkv.jpg');" onclick="onClick()">
                             <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1 justify-content-center align-items-center" id="dkvcard">
-                                <h3 class="display-6 lh-1 fw-bold text-center">Desain Komunikasi Visual</h3>
+                                <h3 class="display-6 lh-1 fw-bold text-center">
+                                    <a href="#custom-cards" onclick="loadJurusan('dkv')" class="text-white text-decoration-none">
+                                        Desain Komunikasi Visual
+                                    </a>
+                                </h3>
                             </div>
                         </div>
                     </div>
                     <div class="col">
-                        <div class="card card-cover h-100 overflow-hidden rounded-4 shadow-lg" style="background-image: url('./Assets/multimedia.jpg');">
+                        <div class="card card-cover h-100 overflow-hidden rounded-4 shadow-lg" style="background-image: url('./Assets/broadcasting.png');">
                             <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1 justify-content-center align-items-center">
-                                <h3 class="display-6 lh-1 fw-bold text-center">Multi Media</h3>
+                                <h3 class="display-6 lh-1 fw-bold text-center">
+                                    <a href="#custom-cards" onclick="loadJurusan('broadcasting')" class="text-white text-decoration-none">
+                                        Broadcasting
+                                    </a>
+                                </h3>
                             </div>
                         </div>
                     </div>
                     <div class="col">
                         <div class="card card-cover h-100 overflow-hidden rounded-4 shadow-lg" style="background-image: url('./Assets/perkantoran.jpg');">
                             <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1 justify-content-center align-items-center">
-                                <h3 class="display-6 lh-1 fw-bold text-center">Administrasi Perkantoran</h3>
-
+                                <h3 class="display-6 lh-1 fw-bold text-center">
+                                    <a href="#custom-cards" onclick="loadJurusan('perkantoran')" class="text-white text-decoration-none">
+                                        Administrasi Perkantoran
+                                    </a>
+                                </h3>
                             </div>
                         </div>
                     </div>
+                </div>
                 </div>
             </div>
 
@@ -287,13 +299,53 @@
 
              <div class="container col-xxl-8 px-4 py-5" id="tentang">
                 <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-                    <div class="col-10 col-sm-8 col-lg-6">
-                        <img src="./Assets/LOGOSMK.png" class="d-block mx-lg-auto img-fluid" alt="Logo SMK" width="700" height="500" loading="lazy">
+                    <div class="col-lg-4">
+                        <img src="./Assets/LOGOSMK.png" class="img-fluid mt-0 pt-0" alt="Logo SMK" width="700" height="500" loading="lazy">
                     </div>
-                    <div class="col-lg-6">
+                    <div class="col-lg-8">
                         <h1 class="display-6 fw-bold text-body-emphasis lh-1 mb-3 tentang-kami">Tentang Kami</h1>
-                        <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis nam ducimus qui sequi dolorum corrupti a, laudantium excepturi maiores, veniam beatae dolores, eaque sapiente. Nostrum voluptates quae voluptas aut aliquam.</p>
-                        
+                        <p class="lead">SMK Techno Media (atau secara resmi terdaftar sebagai SMKS Techno Media) adalah sekolah menengah kejuruan swasta yang berfokus pada industri kreatif, teknologi digital, dan manajemen. Sekolah ini didirikan pada tahun 2012 untuk melatih generasi muda agar siap menghadapi kebutuhan dunia industri modern.</p>
+                        <p class="lead">
+                            <b>Profil Administrasi Sekolah</b>
+                            <span class="label">
+                            <ol>
+                                <li>
+                                    <b>NPSN:</b> 69756417.
+                                </li>
+                                <li>
+                                    <b>Status Akreditasi:</b> Berakreditasi B.
+                                </li>
+                                <li>
+                                    <b>Alamat Resmi:</b>
+                                        Jl. Ampera Kodiklat TNI Buaran, Kelurahan Buaran,
+                                        Kecamatan Serpong, Kota Tangerang Selatan, Banten
+                                        (Kode Pos: 15316).
+                                </li>
+                            </ol>
+                            </span>
+                        </p>
+                        <p class="lead">
+                            <b>Kurikulum & Program Jurusan (Kompetensi Keahlian)</b><br>
+                            Sekolah ini memadukan materi akademis kejuruan dengan penguatan literasi digital agar siswa adaptif terhadap platform teknologi terkini. Terdapat tiga jurusan utama yang ditawarkan:
+                            <ol>
+                                <li>
+                                    <b>Broadcasting (Produksi & Siaran Program Televisi):</b> Mempelajari teknik pengambilan gambar, penyuntingan video (video editing), penulisan naskah, hingga manajemen produksi konten media penyiaran digital dan televisi.
+                                </li>
+                                <li>
+                                    <b>Desain Komunikasi Visual (DKV):</b> Berfokus pada seni grafis digital, ilustrasi, pembuatan logo, branding, fotografi, serta penguasaan perangkat lunak desain modern.
+                                </li>
+                                <li>
+                                    <b>Manajemen Perkantoran (Otomatisasi & Tata Kelola Perkantoran):</b> Membekali siswa dengan kemampuan administrasi digital, pengelolaan arsip, komunikasi bisnis, dan kemampuan manajerial perkantoran modern
+                                </li>
+                            </ol>
+                        </p>
+                    </div>
+                </div>
+            </div>        
+        <div class="container col-xxl-5">
+            <div class="card mb-5">
+            </li>
+    </ul>
                     </div>
                 </div>
             </div>
@@ -308,7 +360,7 @@
                 <div class="card-bod text-center">
                     <figure>
                         <blockquote class="blockquote">
-                            <h4 class="h4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, debitis delectus! Beatae a soluta enim quas, exercitationem odio quia! Tempore dolore assumenda sunt necessitatibus placeat tenetur rem, deleniti ea delectus!</h3>
+                            <h4 class="h4">SMK Techno Media berorientasi pada pembentukan generasi yang berakhlak mulia, kompeten, dan siap menghadapi tantangan dunia kerja/industri melalui integrasi antara pendidikan karakter dan teknologi masa kini.</h3>
                         </blockquote>
                     </figure>
                 </div>        
@@ -320,9 +372,15 @@
                 <div class="card-bod text-center">
                     <figure>
                         <blockquote class="blockquote">
-                            <p>lorem</p>
-                            <p>lorem</p>
-                            <p>lorem</p>
+                            <p>
+                                <b>Untuk merealisasikan visinya, sekolah ini menjalankan beberapa langkah strategis, antara lain:</b>
+                                <ul class="list-group">
+                                    <li class="list-group-item">Membekali keterampilan vokasi sesuai dengan jurusan yang dipilih (Broadcasting, DKV, dan Manajemen Perkantoran) agar siswa menguasai keahlian praktik yang relevan dengan kebutuhan industri saat ini.</li>
+                                    <li class="list-group-item">Mengembangkan jiwa kewirausahaan (technopreneurship) agar lulusan tidak hanya siap kerja, tetapi juga mampu menciptakan lapangan kerja mandiri.</li>
+                                    <li class="list-group-item">Menanamkan pendidikan karakter Islami dan budi pekerti guna membentuk sumber daya manusia yang berakhlak baik dan tangguh.</li>
+                                    <li class="list-group-item">Menyediakan lingkungan belajar yang kondusif, didukung oleh fasilitas modern dan tenaga pengajar profesional.</li>
+                                </ul>
+                            </p>
                         </blockquote>
                     </figure>
                 </div>        
@@ -720,5 +778,21 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     <script src="index.js"></script>
+    <script>
+        let daftarJurusan = document.getElementById("detail").innerHTML;
+
+        function loadJurusan(jurusan){
+            fetch("load.php?page=" + jurusan)
+                .then(response => response.text())
+                .then(html =>{
+                    document.getElementById("detail").innerHTML = html;
+                });
+        }
+
+        function kembaliKeDaftarJurusan(){
+            document.getElementById("detail").innerHTML = daftarJurusan;
+        }
+    </script>
+
 </body>
 </html3
