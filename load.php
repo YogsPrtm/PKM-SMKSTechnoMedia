@@ -3,7 +3,7 @@
 header('Content-Type: text/html; charset=utf-8');
 
 $json = json_decode(
-    file_get_contents('data/jurusan.json'),
+    file_get_contents('./data/jurusan.json'),
     true
 );
 
