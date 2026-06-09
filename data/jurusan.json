@@ -1,5 +1,5 @@
 {
     "dkv": "./pages/dkv.html",
     "broadcasting": "/.pages/broadcasting.html",
-    "perkantoran": "./pages/perkantoran.html"
+    "perkantoran": "/pages/perkantoran.html"
 }
